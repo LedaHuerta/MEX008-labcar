@@ -84,6 +84,10 @@ nav a {
     background-position: bottom;
 }
 
+.line {
+    width: 50px;
+}
+
 
 /*Responsive Nav*/
 
