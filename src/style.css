@@ -72,16 +72,22 @@ nav a {
 
 /* Estilos seccion hero */
 
-.main-hero {
-    background-color: #f7b617;
-}
-
 .hero {
     background-image: url(taxi.jpg);
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: bottom;
+}
+
+.main-hero {
+    display: inline-block;
+    background-color: #f7b617;
+    width: 40vw;
+    height: 40vh;
+    position: relative;
+    left: 150vh;
+    top: 35vh
 }
 
 .line {
