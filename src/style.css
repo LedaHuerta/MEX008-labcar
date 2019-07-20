@@ -21,7 +21,12 @@ body {
     z-index: 1;
 }
 
-.container {}
+.container {
+    width: 100vw;
+    max-width: 1800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
 
 /* Estilos de navegador */
@@ -70,28 +75,136 @@ nav a {
 }
 
 
-/* Estilos seccion hero */
+/* Estilos seccion hero desktop*/
 
 .hero {
+    display: flex;
     background-image: url(taxi.jpg);
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: bottom;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.main-hero {
-    display: inline-block;
+.main-hero-desktop {
     background-color: #f7b617;
     width: 40vw;
-    height: 40vh;
+    height: 50vh;
+    padding: 3% 5%;
+    color: #fff;
+}
+
+.hero-header {
+    letter-spacing: 3px;
+}
+
+.hero-section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.2em;
+}
+
+.hero-logo {
+    display: flex;
     position: relative;
-    left: 150vh;
-    top: 35vh
+    right: 100px;
+    height: 3vh;
+}
+
+.hero-logo img {
+    height: 3vh;
+}
+
+.hero-section2 {
+    font-size: 0.8em;
+    display: inline-block;
+    padding-bottom: 5%;
+}
+
+.hero-cta2 p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.button-driver-hero {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #2b2b2b;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 180px;
+    font-weight: bold;
 }
 
 .line {
-    width: 50px;
+    width: 122px;
+    height: 25px;
+}
+
+
+/* Estilos seccion hero mobile*/
+
+.main-hero-mobile {
+    background-color: #f7b617;
+    width: 40vw;
+    height: 50vh;
+    padding: 3% 5%;
+    color: #fff;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 1.2em;
+}
+
+.hero-header-mobile h1,
+.hero-header-mobile {
+    padding: 2% 2%;
+    letter-spacing: 3px;
+    display: inline;
+}
+
+.hero-logo-mobile {
+    display: inline;
+    position: relative;
+}
+
+.hero-logo-mobile img {
+    height: 3vh;
+}
+
+.hero-main-mobile {
+    display: block;
+    font-size: 1.2em;
+    padding-top: 15%;
+    text-align: -webkit-center;
+}
+
+.box-button-dd-app-hero {
+    display: block;
+}
+
+.button-dd-app-hero {
+    display: block;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #2b2b2b;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 180px;
+    font-weight: bold;
 }
 
 
@@ -117,5 +230,14 @@ nav a {
         border: 1px ssolid rgba(245, 245, 245, 0.664);
         text-align: center;
         height: 30%;
+    }
+    .hero {
+        background-position: center bottom;
+    }
+    .main-hero-desktop {
+        display: none;
+    }
+    .main-hero-mobile {
+        display: block;
     }
 }
