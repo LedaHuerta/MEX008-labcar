@@ -208,9 +208,61 @@ nav a {
 }
 
 
-/*Responsive Nav*/
+/*Estilos section information*/
+
+.information {
+    display: flex;
+    background-color: #f7b617;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-info-desktop {
+    display: flex;
+    width: inherit;
+    height: 100vh;
+}
+
+.box-info-desktop {
+    display: flex;
+    position: relative;
+    top: 10vh;
+    border: 2px solid #fff;
+    border-left: none;
+    width: 90vw;
+    height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.txt-info-desktop {
+    display: block;
+    padding: 3vw;
+}
+
+.title-txt-info-desktop {
+    font-size: x-large;
+    font-size: larger;
+}
+
+.txt-info-p1-desktop,
+.txt-info-p2-desktop,
+.title-txt-info-desktop {
+    color: #fff;
+    text-align: justify;
+}
+
+.txt-info-p1-desktop p,
+.txt-info-p2-desktop p {
+    padding: 5% 1%;
+}
+
+
+/*Responsive*/
 
 @media screen and (max-width:768px) {
+    /*Navegador*/
     .burguer {
         display: block;
     }
@@ -231,6 +283,7 @@ nav a {
         text-align: center;
         height: 30%;
     }
+    /*Hero*/
     .hero {
         background-position: center bottom;
     }
