@@ -12,7 +12,7 @@ body {
     /* background-color: #fff; */
 }
 
-header {
+.body-header {
     height: 10vh;
     width: 100vw;
     background-color: #fff;
@@ -20,6 +20,8 @@ header {
     top: 0;
     z-index: 1;
 }
+
+.container {}
 
 
 /* Estilos de navegador */
@@ -39,16 +41,24 @@ nav {
 .logo img {
     height: inherit;
     vertical-align: top;
+    padding: 7px 5px;
 }
 
-.hamburguer {
+#burguer-box {
+    border: 1px solid #9b9696d7;
+    border-radius: 8px;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+.burguer {
     display: none;
     color: #2b2b2b;
-    font-size: 30px;
-    padding: 23.5px 20 px;
+    font-size: 24px;
+    padding: 20px 20px;
 }
 
-.hamburguer:hover {
+.burguer:hover {
     cursor: pointer;
 }
 
@@ -62,11 +72,40 @@ nav a {
 
 /* Estilos seccion hero */
 
+.main-hero {
+    background-color: #f7b617;
+}
+
 .hero {
-    background-image: url(../taxi.jpg);
+    background-image: url(taxi.jpg);
     width: 100vw;
     height: 90vh;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: bottom;
+}
+
+
+/*Responsive Nav*/
+
+@media screen and (max-width:768px) {
+    .burguer {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        top: 10vh;
+        background-color: white;
+        left: 0;
+        transition-delay: .3s;
+        width: 0;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .menu a {
+        display: inherit;
+        color: #2b2b2b;
+        border: 1px ssolid rgba(245, 245, 245, 0.664);
+        text-align: center;
+        height: 30%;
+    }
 }
