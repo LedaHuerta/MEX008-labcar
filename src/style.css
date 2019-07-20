@@ -1,0 +1,72 @@
+/*Globales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    /* background-color: #fff; */
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* Estilos de navegador */
+
+nav {
+    height: inherit;
+    width: 90vw;
+    display: flex;
+    max-width: 1800px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo,
+.logo img {
+    height: inherit;
+    vertical-align: top;
+}
+
+.hamburguer {
+    display: none;
+    color: #2b2b2b;
+    font-size: 30px;
+    padding: 23.5px 20 px;
+}
+
+.hamburguer:hover {
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 20px;
+    padding: 30px 25px;
+}
+
+
+/* Estilos seccion hero */
+
+.hero {
+    background-image: url(../taxi.jpg);
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
