@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1800px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    /* background-color: #fff; */
+    max-width: 1800px;
 }
 
 .body-header {
@@ -236,9 +237,19 @@ nav a {
     flex-wrap: nowrap;
 }
 
+.img-info-desktop {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .txt-info-desktop {
     display: block;
     padding: 3vw;
+    padding-left: 2%;
+    padding-right: 10%;
 }
 
 .title-txt-info-desktop {
@@ -356,7 +367,132 @@ nav a {
 }
 
 
-/*Estilos section driver mobile*/
+/*Estilos section rates desktop*/
+
+.rates {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7b617;
+}
+
+.main-rates-desktop {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 10vh 6vw;
+}
+
+.box-rates-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 35vw;
+    height: 75vh;
+    color: #fff;
+    padding: 7vh 2vw;
+}
+
+.header-rates-desktop {
+    text-align: justify;
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+
+.txt-rates {
+    text-align: justify;
+    font-size: large;
+    padding-bottom: 5%;
+}
+
+.input-rates {
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.input-rates input {
+    display: flex;
+    -webkit-appearance: none;
+    background-color: #f7b617;
+    border: 1px solid #fff;
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+    word-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-rates input::placeholder {
+    color: #fff;
+    padding-left: 2%;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    justify-content: center;
+    height: 65px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.input-rates input:focus {
+    color: #f7b617;
+    background-color: #fff;
+    height: 65px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.input-rates span {
+    padding-right: 5%;
+    max-height: fit-content;
+}
+
+.input-rates span img {
+    height: 20px;
+}
+
+.box-rates-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-rates {
+    display: flex;
+}
+
+.button-route {
+    width: 250px;
+    height: 70px;
+    -webkit-appearance: none;
+    background-color: #fff;
+    color: #2b2b2b;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.box-map-rates-desktop {
+    display: flex;
+    width: 35vw;
+    height: 75vh;
+    border: 1px solid #fff;
+    justify-content: center;
+}
+
+.map-desktop {
+    display: flex;
+    width: 30vw;
+    height: 70vh;
+    border: 1px solid #fff;
+    justify-content: center;
+}
 
 
 /*Responsive*/

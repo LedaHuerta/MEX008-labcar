@@ -7,7 +7,9 @@ let menuClose = true;
 const buttonBurguer = document.getElementById('burguer-box');
 
 
+// Crear variables para botones de las secciones//
 
+const buttonRoute = document.getElementById('button-route');
 
 //Crear funcion que muestre y oculte el menu en mobile//
 const showNav = () => {
@@ -21,3 +23,8 @@ const showNav = () => {
 };
 
 buttonBurguer.addEventListener('click', showNav);
+
+//Crear funcion que obtenga la localizacion del usuario//
+
+
+buttonRoute.addEventListener('click,showLocation');
