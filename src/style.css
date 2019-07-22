@@ -593,6 +593,120 @@
         height: 90%;
         border: 1px solid #fff;
     }
+    /* Estilos footer desktop */
+    
+    .section-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #2b2b2b;
+    }
+    
+    .main-footer-desktop {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        width: 80vw;
+        height: 90vh;
+    }
+    
+    .header-footer-desktop {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: inherit;
+        height: 15%;
+        margin-top: 2%;
+    }
+    
+    .logo-footer-desktop {
+        width: 12.5%;
+        height: 50%;
+    }
+    
+    .cont-footer-desktop {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 70%;
+    }
+    
+    .box-social-media-desktop {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        padding-bottom: 2%;
+    }
+    
+    .box-social-media-desktop a {
+        text-decoration: none;
+    }
+    
+    .icon {
+        font-size: 20px;
+        color: #fff;
+        -moz-text-decoration-style: none;
+        -webkit-appearance: none;
+        list-style: none;
+    }
+    
+    .links-footer-desktop {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: baseline;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    
+    .links-footer-desktop a {
+        text-decoration: none;
+        -webkit-appearance: none;
+        list-style: none;
+        color: #fff;
+        font-size: large;
+    }
+    
+    .box-stores-desktop {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-bottom: 2%;
+    }
+    
+    .store-box {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    
+    .app-store,
+    .play-store {
+        width: 70%;
+    }
+    
+    .footer-footer-desktop {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .copyright-box-desktop {
+        color: #fff;
+        font-size: x-large;
+        margin-top: 2%;
+    }
     /*Responsive*/
     
     @media screen and (max-width:768px) {
