@@ -5,7 +5,7 @@ let root = document.getElementById("map-desktop");
 let mainRatesDesk = document.getElementById('m-rates-desk');
 let mainRatesMob = document.getElementById('m-rates-mob');
 let rootMobile = document.getElementById('map-mobile');
-
+let marker = {};
 // Crear variables para botones del navegador//
 
 const buttonBurguer = document.getElementById('burguer-box');
@@ -44,26 +44,64 @@ function getMap(position) {
         zoom: 19,
         center: latLng
     }
-    if (mainRatesDesk.classList = 'display:flex') {
-        mainRatesMob.classList.add('display:none');
+    if (mainRatesDesk.classList.contains('desk', 'display:flex')) {
         let map = new google.maps.Map(root, objConfig);
-        let marker = new google.maps.Marker({
+        marker = new google.maps.Marker({
             position: latLng,
             map: map,
             title: 'Estás Aquí',
             icon: 'pin-user.png',
             animation: google.maps.Animation.BOUNCE
-        })
-    } else {
-        mainRatesMob.classList.remove('display:none');
-        mainRatesDesk.classList.add('display:none')
-        let map = new google.maps.Map(rootmobile, objConfig);
-        let marker = new google.maps.Marker({
-            position: latLng,
-            map: map,
-            title: 'Estás Aquí',
-            icon: 'pin-user.png',
-            animation: google.maps.Animation.BOUNCE
-        })
+        });
     }
-}
+    if (mainRatesDesk.classList.contains('desk', 'display:block')) {
+        mainRatesMob.classList.add('display:flex', 'flexdirection:column', 'align-items:flex-start', 'justify-content:flex-start', 'width:90vw', 'height:90vh');
+        let map = new google.maps.Map(rootMobile, objConfig);
+        marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            title: 'Estás Aquí',
+            icon: 'pin-user.png',
+            animation: google.maps.Animation.BOUNCE
+        });
+
+    }
+};
+
+
+// navigator.geolocation.getCurrentPosition(getMap, noGet);
+
+// function noGet() {
+//     alert('Porfavor habilita el permiso para compartir ubicación')
+// }
+
+// function getMap(position) {
+//     let latitude = position.coords.latitude;
+//     let longitude = position.coords.longitude;
+//     let latLng = new google.maps.LatLng(latitude, longitude);
+//     let objConfig = {
+//         zoom: 19,
+//         center: latLng
+//     }
+//     if (mainRatesDesk.classList.contains('desk', 'display:flex')) {
+//         let map = new google.maps.Map(root, objConfig);
+//         marker = new google.maps.Marker({
+//             position: latLng,
+//             map: map,
+//             title: 'Estás Aquí',
+//             icon: 'pin-user.png',
+//             animation: google.maps.Animation.BOUNCE
+//         });
+//     }
+//     if (mainRatesDesk.classList.contains('desk', 'display:block')) {
+//         let map = new google.maps.Map(rootMobile, objConfig);
+//         marker = new google.maps.Marker({
+//             position: latLng,
+//             map: map,
+//             title: 'Estás Aquí',
+//             icon: 'pin-user.png',
+//             animation: google.maps.Animation.BOUNCE
+//         });
+
+//     }
+// };
