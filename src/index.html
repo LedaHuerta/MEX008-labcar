@@ -14,6 +14,44 @@
 
 <body id="body">
     <main class="container">
+        <main id="login-modal" class="login-modal">
+            <div class="log-cont-modal">
+                <box class="header-log-modal">
+                    <a class="close-log-modal" href="#">X</a>
+                    <figure class="box-imglog">
+                        <img class="img-log" src="img-log.png" alt="silueta de persona">
+                    </figure>
+                </box>
+                <section class="main-log-modal">
+                    <box class="cont-log">
+                        <box class="box-usr-nam-log">
+                            <figure class="img-usr-log">
+                                <img src="img-usr-log.png" alt="Silueta de persona">
+                            </figure>
+                            <box class="inp-usr-log">
+                                <input type="text" placeholder="Username">
+                            </box>
+                        </box>
+                        <box class="box-psw-log">
+                            <figure class="img-psw-log">
+                                <img src="img-psw-log.png" alt="Candado">
+                            </figure>
+                            <box class="inp-psw-log">
+                                <input type="text" placeholder="Username">
+                            </box>
+                        </box>
+                        <a class="btn-log" href="#">LOG IN</a>
+                        <box class="box-fgtpsw-log">
+                            <p>Forgot password?</p>
+                            <a href="#">Click Here</a>
+                        </box>
+                    </box>
+
+                </section>
+            </div>
+        </main>
+
+
         <header class="body-header">
             <nav>
                 <div class="burguer" id="burguer-box">
@@ -23,9 +61,9 @@
                     <img src="logo.png" alt="Logo Labcar">
                 </figure>
                 <section class="menu" id="menu-nav">
-                    <a href="">Viaja</a>
-                    <a href="">Conduce</a>
-                    <a href="">Inicia Sesión</a>
+                    <a href="#">Viaja</a>
+                    <a href="#">Conduce</a>
+                    <a href="#login-modal">Inicia Sesión</a>
                 </section>
 
             </nav>
