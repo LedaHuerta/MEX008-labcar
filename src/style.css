@@ -658,7 +658,8 @@
         list-style: none;
     }
     
-    .links-footer-desktop {
+    .links-footer-desktop,
+    .links-footer2-desktop {
         width: 20%;
         height: 100%;
         display: flex;
@@ -669,6 +670,7 @@
         padding-left: 2%;
     }
     
+    .links-footer2-desktop a,
     .links-footer-desktop a {
         text-decoration: none;
         -webkit-appearance: none;
@@ -758,5 +760,37 @@
         }
         .main-rates-mobile {
             display: flex;
+        }
+        /* Footer */
+        .section-footer {
+            display: inline-block;
+        }
+        .cont-footer-desktop {
+            display: inline-block;
+        }
+        .logo-footer-desktop {
+            width: 20%;
+        }
+        .links-footer2-desktop {
+            display: none;
+        }
+        .box-social-media-desktop {
+            height: 25%;
+            padding-bottom: 5%;
+            float: right;
+            justify-content: flex-start;
+            position: relative;
+        }
+        .box-stores-desktop {
+            height: 45%;
+            justify-content: flex-end;
+            float: right;
+        }
+        .links-footer-desktop {
+            position: relative;
+            float: left;
+            clear: right;
+            justify-content: end;
+            align-items: flex-start;
         }
     }
