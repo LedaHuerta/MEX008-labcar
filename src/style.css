@@ -1,543 +1,646 @@
-/*Globales */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 1800px;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    max-width: 1800px;
-}
-
-.body-header {
-    height: 10vh;
-    width: 100vw;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-}
-
-.container {
-    width: 100vw;
-    max-width: 1800px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-
-/* Estilos de navegador */
-
-nav {
-    height: inherit;
-    width: 90vw;
-    display: flex;
-    max-width: 1800px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.logo,
-.logo img {
-    height: inherit;
-    vertical-align: top;
-    padding: 7px 5px;
-}
-
-#burguer-box {
-    border: 1px solid #9b9696d7;
-    border-radius: 8px;
-    padding: 1px;
-    margin-bottom: 5px;
-}
-
-.burguer {
-    display: none;
-    color: #2b2b2b;
-    font-size: 24px;
-    padding: 20px 20px;
-}
-
-.burguer:hover {
-    cursor: pointer;
-}
-
-nav a {
-    text-decoration: none;
-    color: #2b2b2b;
-    font-size: 20px;
-    padding: 30px 25px;
-}
-
-
-/* Estilos seccion hero desktop*/
-
-.hero {
-    display: flex;
-    background-image: url(taxi.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: bottom;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.main-hero-desktop {
-    background-color: #f7b617;
-    width: 40vw;
-    height: 50vh;
-    padding: 3% 5%;
-    color: #fff;
-}
-
-.hero-header {
-    letter-spacing: 3px;
-}
-
-.hero-section1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 1.2em;
-}
-
-.hero-logo {
-    display: flex;
-    position: relative;
-    right: 100px;
-    height: 3vh;
-}
-
-.hero-logo img {
-    height: 3vh;
-}
-
-.hero-section2 {
-    font-size: 0.8em;
-    display: inline-block;
-    padding-bottom: 5%;
-}
-
-.hero-cta2 p {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.button-driver-hero {
-    -webkit-appearance: none;
-    cursor: pointer;
-    background-color: #fff;
-    color: #2b2b2b;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    height: 25px;
-    width: 180px;
-    font-weight: bold;
-}
-
-.line {
-    width: 122px;
-    height: 25px;
-}
-
-
-/* Estilos seccion hero mobile*/
-
-.main-hero-mobile {
-    background-color: #f7b617;
-    width: 40vw;
-    height: 50vh;
-    padding: 3% 5%;
-    color: #fff;
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    font-size: 1.2em;
-}
-
-.hero-header-mobile h1,
-.hero-header-mobile {
-    padding: 2% 2%;
-    letter-spacing: 3px;
-    display: inline;
-}
-
-.hero-logo-mobile {
-    display: inline;
-    position: relative;
-}
-
-.hero-logo-mobile img {
-    height: 3vh;
-}
-
-.hero-main-mobile {
-    display: block;
-    font-size: 1.2em;
-    padding-top: 15%;
-    text-align: -webkit-center;
-}
-
-.box-button-dd-app-hero {
-    display: block;
-}
-
-.button-dd-app-hero {
-    display: block;
-    -webkit-appearance: none;
-    cursor: pointer;
-    background-color: #fff;
-    color: #2b2b2b;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    height: 25px;
-    width: 180px;
-    font-weight: bold;
-}
-
-
-/*Estilos section information desktop*/
-
-.information {
-    display: flex;
-    background-color: #f7b617;
-    width: 100vw;
-    height: 100vh;
-}
-
-.main-info-desktop {
-    display: flex;
-    width: inherit;
-    height: 100vh;
-}
-
-.box-info-desktop {
-    display: flex;
-    position: relative;
-    top: 10vh;
-    border: 2px solid #fff;
-    border-left: none;
-    width: 90vw;
-    height: 80vh;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.img-info-desktop {
-    width: 40%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.txt-info-desktop {
-    display: block;
-    padding: 3vw;
-    padding-left: 2%;
-    padding-right: 10%;
-}
-
-.title-txt-info-desktop {
-    font-size: x-large;
-}
-
-.txt-info-p1-desktop,
-.txt-info-p2-desktop,
-.title-txt-info-desktop {
-    color: #fff;
-    text-align: justify;
-}
-
-.txt-info-p1-desktop p,
-.txt-info-p2-desktop p {
-    padding: 5% 1%;
-}
-
-
-/*Estilos section information mobile*/
-
-.main-info-mobile {
-    display: none;
-    width: inherit;
-    height: 100vh;
-}
-
-.box-info-mobile {
-    display: flex;
-    position: relative;
-    top: 10vh;
-    left: 5vw;
-    border: 2px solid #fff;
-    width: 90vw;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.txt-info-mobile {
-    color: #fff;
-    display: block;
-    padding: 2vw;
-}
-
-.title-txt-info-mobile {
-    font-size: x-large;
-    text-align: center;
-}
-
-.title-txt-info-mobile h2 {
-    padding-bottom: 2vh;
-}
-
-.txt-info-p1-mobile {
-    font-size: large;
-    text-align: center;
-}
-
-.txt-info-p1-mobile p {
-    padding: 5% 1%;
-}
-
-
-/*Estilos section driver desktop*/
-
-.driver {
-    display: flex;
-    background-image: url(conduce.jpg);
-    background-size: cover;
-    background-position: bottom;
-    width: 100vw;
-    height: 70vh;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.main-driver-desktop {
-    display: block;
-    background-color: #07070791;
-    width: 40vw;
-    height: 70vh;
-    padding: 3% 3%;
-    color: #fff;
-}
-
-.box-driver-desktop {
-    display: block;
-    position: relative;
-    top: 5vh;
-}
-
-.title-txt-driver-mobile {
-    font-size: x-large;
-}
-
-.txt-driver-p-desktop {
-    text-align: justify;
-    font-size: large;
-}
-
-.button-driver-driver {
-    -webkit-appearance: none;
-    background-color: #f7b617;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    height: 50px;
-    width: 240px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: large;
-}
-
-
-/*Estilos section rates desktop*/
-
-.rates {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: #f7b617;
-}
-
-.main-rates-desktop {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: space-between;
-    padding: 10vh 6vw;
-}
-
-.box-rates-desktop {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 35vw;
-    height: 75vh;
-    color: #fff;
-    padding: 7vh 2vw;
-}
-
-.header-rates-desktop {
-    text-align: justify;
-    font-size: x-large;
-    font-weight: bold;
-    padding-bottom: 5%;
-}
-
-.txt-rates {
-    text-align: justify;
-    font-size: large;
-    padding-bottom: 5%;
-}
-
-.input-rates {
-    display: flex;
-    padding-bottom: 5%;
-}
-
-.input-rates input {
-    display: flex;
-    -webkit-appearance: none;
-    background-color: #f7b617;
-    border: 1px solid #fff;
-    width: 400px;
-    height: 70px;
-    border-radius: 10px;
-    word-spacing: 2px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.input-rates input::placeholder {
-    color: #fff;
-    padding-left: 2%;
-    font-family: 'Montserrat', sans-serif;
-    word-spacing: 2px;
-    justify-content: center;
-    height: 65px;
-    font-size: large;
-    font-weight: 600;
-}
-
-.input-rates input:focus {
-    color: #f7b617;
-    background-color: #fff;
-    height: 65px;
-    font-size: large;
-    font-weight: 600;
-}
-
-.input-rates span {
-    padding-right: 5%;
-    max-height: fit-content;
-}
-
-.input-rates span img {
-    height: 20px;
-}
-
-.box-rates-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.button-rates {
-    display: flex;
-}
-
-.button-route {
-    width: 250px;
-    height: 70px;
-    -webkit-appearance: none;
-    background-color: #fff;
-    color: #2b2b2b;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: large;
-    font-weight: 700;
-    word-spacing: 3px;
-    letter-spacing: 1px;
-}
-
-.box-map-rates-desktop {
-    display: flex;
-    width: 35vw;
-    height: 75vh;
-    border: 1px solid #fff;
-    justify-content: center;
-}
-
-.map-desktop {
-    display: flex;
-    width: 30vw;
-    height: 70vh;
-    border: 1px solid #fff;
-    justify-content: center;
-}
-
-
-/*Responsive*/
-
-@media screen and (max-width:768px) {
-    /*Navegador*/
+    /*Globales */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 1800px;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+        max-width: 1800px;
+    }
+    
+    .body-header {
+        height: 10vh;
+        width: 100vw;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    
+    .container {
+        width: 100vw;
+        max-width: 1800px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    /* Estilos de navegador */
+    
+    nav {
+        height: inherit;
+        width: 90vw;
+        display: flex;
+        max-width: 1800px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .logo,
+    .logo img {
+        height: inherit;
+        vertical-align: top;
+        padding: 7px 5px;
+    }
+    
+    #burguer-box {
+        border: 1px solid #9b9696d7;
+        border-radius: 8px;
+        padding: 1px;
+        margin-bottom: 5px;
+    }
+    
     .burguer {
+        display: none;
+        color: #2b2b2b;
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+    
+    .burguer:hover {
+        cursor: pointer;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #2b2b2b;
+        font-size: 20px;
+        padding: 30px 25px;
+    }
+    /* Estilos seccion hero desktop*/
+    
+    .hero {
+        display: flex;
+        background-image: url(taxi.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: bottom;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .main-hero-desktop {
+        background-color: #f7b617;
+        width: 40vw;
+        height: 50vh;
+        padding: 3% 5%;
+        color: #fff;
+    }
+    
+    .hero-header {
+        letter-spacing: 3px;
+    }
+    
+    .hero-section1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 1.2em;
+    }
+    
+    .hero-logo {
+        display: flex;
+        position: relative;
+        right: 100px;
+        height: 3vh;
+    }
+    
+    .hero-logo img {
+        height: 3vh;
+    }
+    
+    .hero-section2 {
+        font-size: 0.8em;
+        display: inline-block;
+        padding-bottom: 5%;
+    }
+    
+    .hero-cta2 p {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .button-driver-hero {
+        -webkit-appearance: none;
+        cursor: pointer;
+        background-color: #fff;
+        color: #2b2b2b;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        height: 25px;
+        width: 180px;
+        font-weight: bold;
+    }
+    
+    .line {
+        width: 122px;
+        height: 25px;
+    }
+    /* Estilos seccion hero mobile*/
+    
+    .main-hero-mobile {
+        background-color: #f7b617;
+        width: 40vw;
+        height: 50vh;
+        padding: 3% 5%;
+        color: #fff;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 1.2em;
+    }
+    
+    .hero-header-mobile h1,
+    .hero-header-mobile {
+        padding: 2% 2%;
+        letter-spacing: 3px;
+        display: inline;
+    }
+    
+    .hero-logo-mobile {
+        display: inline;
+        position: relative;
+    }
+    
+    .hero-logo-mobile img {
+        height: 3vh;
+    }
+    
+    .hero-main-mobile {
+        display: block;
+        font-size: 1.2em;
+        padding-top: 15%;
+        text-align: -webkit-center;
+    }
+    
+    .box-button-dd-app-hero {
         display: block;
     }
-    .menu {
-        position: fixed;
-        top: 10vh;
-        background-color: white;
-        left: 0;
-        transition-delay: .3s;
-        width: 0;
-        overflow: hidden;
+    
+    .button-dd-app-hero {
+        display: block;
+        -webkit-appearance: none;
+        cursor: pointer;
+        background-color: #fff;
+        color: #2b2b2b;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        height: 25px;
+        width: 180px;
+        font-weight: bold;
+    }
+    /*Estilos section information desktop*/
+    
+    .information {
+        display: flex;
+        background-color: #f7b617;
+        width: 100vw;
         height: 100vh;
     }
-    .menu a {
-        display: inherit;
-        color: #2b2b2b;
-        border: 1px ssolid rgba(245, 245, 245, 0.664);
-        text-align: center;
-        height: 30%;
-    }
-    /*Hero*/
-    .hero {
-        background-position: center bottom;
-    }
-    .main-hero-desktop {
-        display: none;
-    }
-    .main-hero-mobile {
-        display: block;
-    }
-    /*Information*/
+    
     .main-info-desktop {
-        display: none;
+        display: flex;
+        width: inherit;
+        height: 100vh;
     }
+    
+    .box-info-desktop {
+        display: flex;
+        position: relative;
+        top: 10vh;
+        border: 2px solid #fff;
+        border-left: none;
+        width: 90vw;
+        height: 80vh;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .img-info-desktop {
+        width: 40%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .txt-info-desktop {
+        display: block;
+        padding: 3vw;
+        padding-left: 2%;
+        padding-right: 10%;
+    }
+    
+    .title-txt-info-desktop {
+        font-size: x-large;
+    }
+    
+    .txt-info-p1-desktop,
+    .txt-info-p2-desktop,
+    .title-txt-info-desktop {
+        color: #fff;
+        text-align: justify;
+    }
+    
+    .txt-info-p1-desktop p,
+    .txt-info-p2-desktop p {
+        padding: 5% 1%;
+    }
+    /*Estilos section information mobile*/
+    
     .main-info-mobile {
+        display: none;
+        width: inherit;
+        height: 100vh;
+    }
+    
+    .box-info-mobile {
+        display: flex;
+        position: relative;
+        top: 10vh;
+        left: 5vw;
+        border: 2px solid #fff;
+        width: 90vw;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .txt-info-mobile {
+        color: #fff;
+        display: block;
+        padding: 2vw;
+    }
+    
+    .title-txt-info-mobile {
+        font-size: x-large;
+        text-align: center;
+    }
+    
+    .title-txt-info-mobile h2 {
+        padding-bottom: 2vh;
+    }
+    
+    .txt-info-p1-mobile {
+        font-size: large;
+        text-align: center;
+    }
+    
+    .txt-info-p1-mobile p {
+        padding: 5% 1%;
+    }
+    /*Estilos section driver desktop*/
+    
+    .driver {
+        display: flex;
+        background-image: url(conduce.jpg);
+        background-size: cover;
+        background-position: bottom;
+        width: 100vw;
+        height: 70vh;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .main-driver-desktop {
+        display: block;
+        background-color: #07070791;
+        width: 40vw;
+        height: 70vh;
+        padding: 3% 3%;
+        color: #fff;
+    }
+    
+    .box-driver-desktop {
+        display: block;
+        position: relative;
+        top: 5vh;
+    }
+    
+    .title-txt-driver-mobile {
+        font-size: x-large;
+    }
+    
+    .txt-driver-p-desktop {
+        text-align: justify;
+        font-size: large;
+    }
+    
+    .button-driver-driver {
+        -webkit-appearance: none;
+        background-color: #f7b617;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 240px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: large;
+    }
+    /*Estilos section rates desktop*/
+    
+    .rates {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f7b617;
+    }
+    
+    .main-rates-desktop {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-between;
+        padding: 10vh 6vw;
+    }
+    
+    .box-rates-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 35vw;
+        height: 75vh;
+        color: #fff;
+        padding: 7vh 2vw;
+    }
+    
+    .header-rates-desktop {
+        text-align: justify;
+        font-size: x-large;
+        font-weight: bold;
+        padding-bottom: 5%;
+    }
+    
+    .txt-rates-desktop {
+        text-align: justify;
+        font-size: large;
+        padding-bottom: 5%;
+    }
+    
+    .input-rates-desktop {
+        display: flex;
+        padding-bottom: 5%;
+    }
+    
+    .input-rates-desktop input {
+        display: flex;
+        -webkit-appearance: none;
+        background-color: #f7b617;
+        border: 1px solid #fff;
+        width: 400px;
+        height: 70px;
+        border-radius: 10px;
+        word-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .input-rates-desktop input::placeholder {
+        color: #fff;
+        padding-left: 2%;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 2px;
+        justify-content: center;
+        height: 65px;
+        font-size: large;
+        font-weight: 600;
+    }
+    
+    .input-rates-desktop input:focus {
+        color: #f7b617;
+        background-color: #fff;
+        height: 65px;
+        font-size: large;
+        font-weight: 600;
+    }
+    
+    .input-rates-desktop span {
+        padding-right: 5%;
+        max-height: fit-content;
+    }
+    
+    .input-rates-desktop span img {
+        height: 20px;
+    }
+    
+    .button-rates-desktop {
         display: flex;
     }
-    /*Driver*/
-    .main-driver-desktop {
-        width: 100vw;
+    
+    .button-route-desktop {
+        width: 250px;
+        height: 70px;
+        -webkit-appearance: none;
+        background-color: #fff;
+        color: #2b2b2b;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: large;
+        font-weight: 700;
+        word-spacing: 3px;
+        letter-spacing: 1px;
     }
-}
+    
+    .box-map-rates-desktop {
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        height: 75vh;
+        border: 1px solid #fff;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .map-box,
+    .map-desktop {
+        display: flex;
+        width: 90%;
+        height: 90%;
+        border: 1px solid #fff;
+    }
+    /* Estilos rates mobile */
+    
+    .main-rates-mobile {
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+        padding: 10vh 3vw;
+    }
+    
+    .box-rates-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 90vw;
+        height: 30vh;
+        color: #fff;
+        padding: 7vh 2vw;
+    }
+    
+    .header-rates-mobile {
+        text-align: justify;
+        font-size: x-large;
+        font-weight: bold;
+        padding-bottom: 2%;
+    }
+    
+    .txt-rates-mobile {
+        text-align: justify;
+        font-size: large;
+        padding-bottom: 3%;
+    }
+    
+    .input-rates-mobile {
+        display: flex;
+        padding-bottom: 2%;
+    }
+    
+    .input-rates-mobile input {
+        display: flex;
+        -webkit-appearance: none;
+        background-color: #f7b617;
+        border: 1px solid #fff;
+        width: 400px;
+        height: 30px;
+        border-radius: 10px;
+        word-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .input-rates-mobile input::placeholder {
+        color: #fff;
+        padding-left: 2%;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 2px;
+        justify-content: center;
+        height: 30px;
+        font-size: medium;
+        font-weight: 500;
+    }
+    
+    .input-rates-mobile input:focus {
+        color: #f7b617;
+        background-color: #fff;
+        height: 30px;
+        font-size: medium;
+        font-weight: 500;
+    }
+    
+    .input-rates-mobile span {
+        padding-right: 5%;
+        max-height: fit-content;
+    }
+    
+    .input-rates-mobile span img {
+        height: 20px;
+    }
+    
+    .button-rates-mobile {
+        display: flex;
+    }
+    
+    .button-route-mobile {
+        width: 250px;
+        height: 30px;
+        -webkit-appearance: none;
+        background-color: #fff;
+        color: #2b2b2b;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: medium;
+        font-weight: 600;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+    
+    .box-map-rates-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 30vh;
+        border: 1px solid #fff;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .map-box,
+    .map-mobile {
+        display: flex;
+        width: 90%;
+        height: 90%;
+        border: 1px solid #fff;
+    }
+    /*Responsive*/
+    
+    @media screen and (max-width:768px) {
+        /*Navegador*/
+        .burguer {
+            display: block;
+        }
+        .menu {
+            position: fixed;
+            top: 10vh;
+            background-color: white;
+            left: 0;
+            transition-delay: .3s;
+            width: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .menu a {
+            display: inherit;
+            color: #2b2b2b;
+            border: 1px ssolid rgba(245, 245, 245, 0.664);
+            text-align: center;
+            height: 30%;
+        }
+        /*Hero*/
+        .hero {
+            background-position: center bottom;
+        }
+        .main-hero-desktop {
+            display: none;
+        }
+        .main-hero-mobile {
+            display: block;
+        }
+        /*Information*/
+        .main-info-desktop {
+            display: none;
+        }
+        .main-info-mobile {
+            display: flex;
+        }
+        /*Driver*/
+        .main-driver-desktop {
+            width: 100vw;
+        }
+        /* Rates  */
+        .main-rates-desktop {
+            display: none;
+        }
+        .main-rates-mobile {
+            display: flex;
+        }
+    }

@@ -1,6 +1,10 @@
 // Crear variables globales//
 const menuNav = document.getElementById('menu-nav');
 let menuClose = true;
+let root = document.getElementById("map-desktop");
+let mainRatesDesk = document.getElementById('m-rates-desk');
+let mainRatesMob = document.getElementById('m-rates-mob');
+let rootMobile = document.getElementById('map-mobile');
 
 // Crear variables para botones del navegador//
 
@@ -24,7 +28,42 @@ const showNav = () => {
 
 buttonBurguer.addEventListener('click', showNav);
 
-//Crear funcion que obtenga la localizacion del usuario//
+//Crear funcion y promesa que obtenga la geolocalizacion del usuario por medio de Api Geolocation y la muestre en un mapa dinamico de Google Maps por medio de Api MapsJAvascript//
 
+navigator.geolocation.getCurrentPosition(getMap, noGet);
 
-buttonRoute.addEventListener('click,showLocation');
+function noGet() {
+    alert('Porfavor habilita el permiso para compartir ubicación')
+}
+
+function getMap(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let latLng = new google.maps.LatLng(latitude, longitude);
+    let objConfig = {
+        zoom: 19,
+        center: latLng
+    }
+    if (mainRatesDesk.classList = 'display:flex') {
+        mainRatesMob.classList.add('display:none');
+        let map = new google.maps.Map(root, objConfig);
+        let marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            title: 'Estás Aquí',
+            icon: 'pin-user.png',
+            animation: google.maps.Animation.BOUNCE
+        })
+    } else {
+        mainRatesMob.classList.remove('display:none');
+        mainRatesDesk.classList.add('display:none')
+        let map = new google.maps.Map(rootmobile, objConfig);
+        let marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            title: 'Estás Aquí',
+            icon: 'pin-user.png',
+            animation: google.maps.Animation.BOUNCE
+        })
+    }
+}
