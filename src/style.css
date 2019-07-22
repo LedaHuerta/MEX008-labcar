@@ -653,7 +653,7 @@
     .icon {
         font-size: 20px;
         color: #fff;
-        -moz-text-decoration-style: none;
+        /* -moz-text-decoration-style: none; */
         -webkit-appearance: none;
         list-style: none;
     }
