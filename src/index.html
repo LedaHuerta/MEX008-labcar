@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQQn_PJV-08K-88MZzU-FwXis7UleC380&callback=initMap"></script>
 </head>
 
 <body id="body">
@@ -126,22 +127,67 @@
 
             </main>
         </section>
+        <section class="rates" id="section-rates">
+            <main id="m-rates-desk" class="main-rates-desktop desk">
+                <section class="box-rates-desktop">
+                    <header class="header-rates-desktop">
+                        <h2>Tarifas</h2>
+                    </header>
+                    <box class="txt-rates-desktop">
+                        <p>Consulta las tarifas LabCar aquí</p>
+                    </box>
+                    <box class="input-rates-desktop">
+                        <span><img src="circulo.png" alt="circulo"></span> <input type="text" placeholder="Ingrese punto de partida">
+                        <br>
+                        <br>
+                    </box>
+                    <box class="input-rates-desktop">
+                        <span><img src="flecha.png" alt="flecha"></span> <input type="text" placeholder="Ingrese un destino">
+                    </box>
+                    <br>
+                    <br>
+                    <box class="button-rates">
+                        <button class="button-route-desktop" id="button-route">¡TRAZAR RUTA!</button>
+                    </box>
+                </section>
+                <section class="box-map-rates-desktop">
+                    <main class="map-desktop" id="map-desktop">
+                        <h1></h1>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d120406.8967538684!2d-99.1394494!3d19.4246936!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1563631675441!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    </main>
+                </section>
+            </main>
+            <main id="m-rates-mob" class="main-rates-mobile">
+                <section class="box-rates-mobile">
+                    <header class="header-rates-mobile">
+                        <h2>Tarifas</h2>
+                    </header>
+                    <box class="txt-rates-mobile">
+                        <p>Consulta las tarifas LabCar aquí</p>
+                    </box>
+                    <box class="input-rates-mobile">
+                        <span><img src="circulo.png" alt="circulo"></span> <input type="text" placeholder="Ingrese punto de partida">
+                        <br>
+                        <br>
+                    </box>
+                    <box class="input-rates-mobile">
+                        <span><img src="flecha.png" alt="flecha"></span> <input type="text" placeholder="Ingrese un destino">
+                    </box>
 
-        <section>
-            <h3>tarifa</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+                    <box class="button-rates-mobile">
+                        <button class="button-route-mobile" id="button-route">¡TRAZAR RUTA!</button>
+                    </box>
+                </section>
+                <section class="box-map-rates-mobile">
+                    <main class="map-mobile" id="map-mobile">
+                        <h1></h1>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d120406.8967538684!2d-99.1394494!3d19.4246936!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1563631675441!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    </main>
+                </section>
+            </main>
         </section>
 
-        <footer>
+        <footer class="body-footer" id="footer">
             <h3>footer</h3>
             br*5
         </footer>
@@ -149,7 +195,10 @@
 
 
     </main>
+
+
     <script type="text/javascript" src="main.js"></script>
+
 </body>
 
 </html>
