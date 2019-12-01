@@ -1,0 +1,159 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    display: table;
+}
+.imagen{
+    background-image: url("taxi.jpg");
+    height: 100%;
+    min-height: 100%; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.imagen-conductor{
+    background-image: url("conduce.jpg");
+    height: 50%;
+    min-height: 50%; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: white !important;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+  }
+  
+  ::placeholder {
+    color: white !important;
+  }
+.card-size{
+    width: 400px; 
+    height: 300px; 
+    float: right;
+    background-color:#F5B041;
+    color: aliceblue;
+}
+.card-size-top{
+    width: 400px; 
+    height: 300px; 
+    float: right;
+    background-color: black;
+    opacity:0.7;
+    color: aliceblue;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.font-titulo-size{
+    font-size: 25px;
+}
+.font-titulo{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.vertical{
+    display: table; 
+    height: 100%; 
+    overflow: hidden;
+    width: 100%;
+}
+.box{
+    display: table-cell;
+    vertical-align: middle;
+}
+.box-top{
+    display: table-cell;
+    vertical-align: super;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .grande{
+        display: none;
+    }
+    .pequeno{
+        display: block;
+    }
+    .grande-app{
+        display: none;
+    }
+    .pequeno-app{
+        display: block;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .grande{
+        display: none;
+    }
+    .pequeno{
+        display: block;
+    }
+    .grande-app{
+        display: none;
+    }
+    .pequeno-app{
+        display: block;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .grande{
+        display: block;
+    }
+    .pequeno{
+        display: none;
+    }
+    .grande-app{
+        display: none;
+    }
+    .pequeno-app{
+        display: block;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .grande{
+        display: block;
+    }
+    .pequeno{
+        display: none;
+    }
+    .grande-app{
+        display: block;
+    }
+    .pequeno-app{
+        display: none;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .grande{
+        display: block;
+    }
+    .pequeno{
+        display: none;
+    }
+    .grande-app{
+        display: block;
+    }
+    .pequeno-app{
+        display: none;
+    }
+}
